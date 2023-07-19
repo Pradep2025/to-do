@@ -32,8 +32,19 @@ then
 git push origin main
 
 
+--list the current branches
+git branch
 
+--change to the branch name
+git branch -M main
 
+If neither "main" nor "master" exist (i.e., if you just initialized a new Git repository), you need to make an initial commit to establish a branch that you can push. Here's how:
+echo "# My Project" >> README.md
+git add README.md
+git commit -m "Initial commit"
+git push origin main
+
+After these steps, your git push origin main command should work.
 
 
 
