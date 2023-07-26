@@ -1,18 +1,53 @@
 Install Git for Windows:
 Download and install Git for Windows from the official website (https://gitforwindows.org/). During installation, make sure to select the necessary components, such as Git Bash, which provides a Unix-like command-line interface.
 
+git init
+
+git remote add origin https://github.com/Pradep2025/kidsens.git
 
 echo "# Kidsens Screening App" >> README.md
-git init
-git add .
-git commit -m "Adding got commands"
+git add README.md
+git commit -m "Initial Comment"
 git push origin main 	
 
 --list the current branches
 git branch
 
---change to the branch name
+--change to the branch name or create a new branch if its exists
 git branch -M main
+
+git push origin main 	
+
+
+Unstage all changes:
+git reset
+
+add only one folder
+git add foldername
+
+
+------------------Creating gitignore file------------------------------------------
+Create a .gitignore file:
+If there are files or folders that you don't want to track, you can list them in a .gitignore file. Here's how you create one:
+
+Open your text editor and create a new file in the root directory of your repository.
+
+mydirectory/
+myfile.txt
+
+Save the .gitignore file and close it.
+Once you've done this, any changes to the files and directories listed in .gitignore will be ignored by Git. You won't see them listed when you run git status, and they won't be included when you run git add ..
+
+You'll need to add and commit the .gitignore file itself if you want it to take effect:
+
+
+git add .gitignore
+git commit -m "Add .gitignore file"
+
+After these steps, you should be able to control what gets staged more precisely.
+
+
+--------------------Not required on a daily basis : only during errors ------------
 
 git remote add origin https://github.com/Pradep2025/kidsens.git
 
